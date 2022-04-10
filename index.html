@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Japan</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="clock-box">
+        <div id="clockbox"></div>
+
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+
+        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+
+
+        <div id="datebox"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('datebox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+      </div>
+
+      <img src="bg/wallhaven-6o7vq6.jpg" alt="marin">
+
+
+        <nav>
+
+
+
+
+            <ul>
+						  <li class="hd">Resources</li>
+              <li><a href="https://animelon.com/">animelon</a></li>
+							<li><a href="https://kotu.io/">kotu.io</a></li>
+							<li><a href="http://www.bretmayer.com/">kanji stuff</a></li>
+							<li><a href="https://onomatoproject.com/list.html">onomatopoeia</a></li>
+							<li><a href="https://learnnatively.com/">natively-books reco</a></li>
+							<li><a href="https://tree-novel.com/info/daytoday.html">treenovel</a></li>
+							<li><a href="https://glenn-sun.github.io/japanese-vocab-test/?utm_source=Tofugu">jp vocab test</a></li>
+							<li><a href="https://marshallyin.com/">learn jp</a></li>
+							<li><a href="https://jm-gakuen.jp/jummaga/pc/?utm_source=Tofugu">jummaga</a></li>
+							<li><a href="https://minosvasilias.github.io/kanjigrid/?utm_source=Tofugu">kanji grid</a></li>
+							<li><a href="https://www.nhk.or.jp/">news web easy</a></li>
+              <li><a href="https://www.asagaku.com/">readin newspaper</a></li>
+							<li><a href="https://community.wanikani.com/t/the-ultimate-additional-japanese-resources-list/16859">ultimate resources list</a></li>
+        </ul>
+
+            <ul>
+						  <li class="hd">Books</li>
+							<li><a href="https://community.wanikani.com/t/master-list-of-book-clubs/35283">book lists</a></li>
+						  <li><a href="https://www.amazon.co.jp/dp/4053048966">jp detective novel</a></li>
+							<li><a href="https://www.amazon.co.jp/dp/4391153386">cute jp</a></li>
+							<li><a href="https://www.amazon.co.jp/dp/4092538731">doraemon jp</a></li>
+							<li><a href="https://www.amazon.co.jp/%E3%81%AB%E3%81%BB%E3%82%93%E3%81%94%E9%80%9F%E8%AA%AD%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8100-%E4%B8%AD%E7%B4%9A-%E8%BE%BB%E5%92%8C%E5%AD%90/dp/489689507X">speed reading</a></li>
+							<li><a href="https://www.amazon.com/small-episodes-communicate-Well-informed-Japanese-ebook/dp/B084FG3LPD">rapid grows ideas</a></li>
+              <li><a href="https://www.amazon.co.jp/dp/4757430884">logical thinking</a></li>
+              <li><a href="https://www.amazon.co.jp/dp/4569788378">tankobon</a></li>
+              <li><a href="https://unkogakuen.com/">poop jp</a></li>
+              <li><a href="https://animixplay.to/">animixplay</a></li>
+              <li><a href="https://subsplease.org/">subsplease</a></li>
+
+            </ul>
+
+            <ul>
+						  <li class="hd">YT n Podcast</li>
+						  <li><a href="https://japaneseswotter.wordpress.com/">p: jp practice drill</a></li>
+              <li><a href="https://www.radiojapan.org/podcasts/oyasumisutori-oyasumi-story">p: sleep stories</a></li>
+              <li><a href="https://nihongoswitch.com/">p: nihongo switch</a></li>
+              <li><a href="https://sai-zen-sen.jp/comics/twi4/fushigineko/0001.html">nyaa comic</a></li>
+            </ul>
+
+            <ul>
+						  <li class="hd">Games</li>
+              <li><a href="https://npckc.itch.io/">npckc</a></li>
+              <li><a href="https://ateliersento.itch.io/dollshop">the doll shop</a></li>
+              <li><a href="https://ateliersento.itch.io/sango">sango coral cave/a></li>
+              <li><a href="https://ateliersento.itch.io/yurei-station/">yurei station</a></li>
+							<li><a href="https://damianvila.com/tabikaeru/">Journey frog</a></li>
+            </ul>
+
+
+
+          </nav>
+          <form action="https://google.com/" method="GET" target="_blank">
+            <input autofocus
+                   name="q"
+                   type="search"
+                   placeholder="search..."
+                    tabindex="1">
+          </form>
+    </body>
+</html>
